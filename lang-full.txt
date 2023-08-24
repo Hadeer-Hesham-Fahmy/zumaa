@@ -1,0 +1,333 @@
+
+Order is now being prepared
+Order is now ready for delivery/pickup
+You can manage user wallet balance from the wallet transaction page
+User Details
+No User Found
+Joined at
+Total Orders
+Most Expensive Order
+Loyalty Point
+Enable Loyalty Point System
+This is the amount that will be rewared with 1 point. e.g Set 0.001 if you want every
+0.001 spent to be rewarded with 1 point
+This is the amount that 1 point can be converted to. e.g Set 0.0001 if you want every 1 point to be convertable to 0.001 and credited to user wallet
+Loyalty Point Report
+Credit
+Debit
+Insufficient Points
+Loyalty point withdrawal
+Loyalty point withdrawal successful
+Loyalty Points can't be redeemed. Please contact support
+Logout failed
+FAQs
+Body
+Create Faq
+Edit Faq
+Faq Details
+I agree with
+terms and conditions
+Sign Up
+Email already associated with any account
+Phone Number already associated with any account
+Phone Number is invalid
+Allow taxi order fare recalculation
+User missing role fixed
+User missing roles
+Original
+Modern
+Self transfer is not allowed. Please select another account to send to. Thank you
+This needs to be abled for the rest driver wallet related settings to work
+Order is invalid
+Order is has already been paid
+Wallet Topup is invalid
+Wallet Topup is has already been paid
+Subscription Payment is invalid
+Subscription Payment is has already been paid
+Mail Settings
+System Mail saved successfully!
+System email failed!
+Update Coupon
+Order can not be completed has account has outstanding balance. Please topup wallet to clear outstanding balance. Please contact support if you require more info. Thank you
+Note
+Order Outstanding Balance
+Order Balance Overpay refund
+Outstanding Payments
+Outstanding Payment Details
+Paid
+Unpaid
+Amount
+Paid
+Balance
+Pay driver
+Trip total
+but you have paid
+the balance of
+will be deduted from your account wallet
+Cash Overdraft Completed
+Online payment overdraft completed
+Notification message to be sent to customer when trip amount is more than initially calculated
+Notification message to be sent to customer when trip amount is more than initially calculated for Online payments
+Use the codes below and it will be replace will values before sending notification
+Driver type can not be switch while there are assigned orders. Please complete order before switching. Thank you
+You need to have a vehicle attached to account before you can switch. Please add vehicle to account
+Vehcile Created Successfully. Your vehicle details will be reviewed and you will be notified via email/sms when approved. Thank you
+Only Order with Cash Payment can be edited. Thank you
+Note:
+Only enable the options below if you are using a vps and have setup supervisor
+Verified
+UnVerified
+You can't activate unverified vehicle. Please verify first before activating vehicle.
+Verify Vehicle
+Selected vehicle can't be made active. Please contact support
+Vehicle is activated successfully!
+Driver Self Pay
+Enable this if you want system to only calculate system commission from delivery fee and vendor order amount with the assumption that driver has paid for order
+Only for Cash On Delivery
+Fees
+For Admin
+Value
+Map Settings
+App Upgrade
+Roles
+Misc.
+FAQ
+Customers
+Loyalty Report
+Summary
+Search products
+Select Vendor
+Add Product
+No products added yet
+Options
+Product Options
+Pickup Order
+Delivery Address
+Select Delivery Address
+Select Payment Method
+Driver Tip
+Please select payment method
+New Taxi Order
+New Taxi Order
+Pickup Address
+Enter address, place etc.
+Vehicle Type
+Select User
+Address is not within service area
+Please select user
+Something went wrong
+
+Max Prescription Images
+Prescription Images
+File Size
+
+Payment Method is required
+Photos
+Signature
+Delivery photo
+
+Vendor is now offline
+Vendor is now online
+Go Offline
+Go Online
+Both time must be supplied
+Both time must be supplied
+Open time must be supplied
+Close time must be supplied
+Close time must be greater than open time
+Vendor also need to setup open/close time for system to auto close/open vendor to accept order.
+Vendor must setup open and close time before order scheduling can work, even if the vendor enabled the option to allow customer to schedule order.
+
+Model Translations
+New Package Order
+New Package Order
+Step
+of
+Previous
+Next
+Please select a package type
+Customer and Package Type
+Please select a user
+Please select a package type
+Please select a vendor
+No vendors found
+We're sorry, but we couldn't find any vendors that match your selected location. It's possible that there are no vendors available in this area, or that they do not offer the product or service you are looking for.
+To help you find what you need, we recommend selecting a nearby location or refining your search criteria. Alternatively, you can reach out to our customer support team for assistance. We're here to help you find the products or services you need, and we'll do our best to find a solution that works for you.
+Schedule Order
+Schedule your order to be delivered at a later time
+Contact Info
+Package weight
+Package length
+Package width
+Package height
+Package Paramaters
+Courier Vendor
+Place Order
+How do you want to pay for this order?
+Distance
+Delivery Charges
+Package Size Charges
+Subtotal
+Discount
+Tax
+Total
+Please select a payer
+Please select a payment method
+Coupon code is invalid for this vendor
+Failed to place order
+
+System charges for Order :code
+New Order Fee
+You have an uncompleted order
+Translation Fallback generated
+Translation Fallback Failed
+Translation arabic values fixed
+Translation arabic values fix Failed
+
+Model Translations Fallback
+Fix Arabic Translation Values
+
+You have reached the maximum number of orders you can accept at once
+
+Firestore indexes already created
+Matching via server
+On Driver Device
+The server fetches order ready for assignment, also fetch nearby driver base on order location, then notify each paired driver about new order. All from the server
+Fewer read/write to firebase firestore. Less/No extra billing cost on firebase.
+Sometimes the order alert can take a bit longer to deliver to the driver device.
+The server fetch order ready for assignment and push it to firestore, then each driver device will fetch the order and check if they are within range to handle the order
+Driver alert order is store on the firestore for the driver app to read from. Its faster in most cases
+Sometimes not accurate. Addes to a lot of firebase read and write, making your billing go up depending on the volume of orders
+Fetch Nearby Driver Location
+Fetch Nearby Driver Location
+Server Fetch API
+Direct try fetch nearby drivers from firestore from the server via api
+No need for uploading firebase functions. No extra billing cost on firebase.
+Might not always be accurate. Need to create extra indexes, check the firebase section in the project documentation for the needed firebase indexes
+Firebase Cloud Function'
+Fecth driver via the firebase functions.
+Pro
+More accurate. No need to create extra indexes
+Con
+Addes to a lot of firebase read and write, making your billing go up depending on the volume of orders
+Matching via server
+On Driver Device
+Server Fetch API
+Firebase Cloud Function
+
+Email Login
+Profile update is disabled
+
+At least one login method must be enabled!
+
+Order Online Payment Timeout
+Wallet Topup Payment Timeout
+Vendor Subscription Payment Timeout
+Service Options Group
+Service Options
+Search services
+
+Payment has already been processed. Please check your app to see more details about the payment
+Payment Update
+You can not complete order payment until vendor request for payment. Please wait and check back later or contact vendor to request for payment
+Invalid Points
+Invalid Amount
+
+Only use this page, if you need to have taxi running in different country with different pricing.
+If you are running taxi in one country, then you should only set the price in the vehicle types page only
+Note
+
+Minimum Wallet Topup Amount
+
+You have reached the maximum number of orders you can place at a time. Please try again after
+seconds.
+Order settings saved successfully!
+Order settings save failed!
+The number of seconds to wait before retrying an order.
+
+Driver Firebase Resolved
+
+These process might be longer depending on the size of your driver record
+
+Incentives
+Driver Mangt.
+Drivers
+Incentives
+Drivers
+Online
+Offline
+Free
+
+Vendor Chat
+Customer Chat
+Driver Chat
+Allow image sharing in chat between vendor and customer/driver
+Allow image sharing in chat between customer and vendor/driver
+Allow image sharing in chat between driver and customer/vendor
+
+Current vendor updated successfully!
+
+Privacy & Policy
+Terms & Condition
+Contact Info
+
+Partners
+Delivery Boys
+Delivery Settings
+Vendor Driver Settings
+failed!
+saved successfully!
+Page Settings
+
+Images/Documents
+Documents
+Image/Document
+Order cancellation reasons
+Click to download/preview
+File Name
+Extension
+Size
+
+Taxi Order
+Order
+Create Order cancellation reason
+Reason saved successfully!
+Both (Taxi Order & Order)
+Edit Order cancellation reason
+Reason updated successfully!
+
+Clear rejected auto assignment must be at least twice the alert duration!
+Delay same order subsequent Search must be at least twice the alert duration!
+
+Driver search radius can't be more than
+
+document request sent successfully!
+document request failed!
+document request cancelled successfully!
+document request cancellation failed!
+Drivers Documents
+Vendors Documents
+Document Requests
+Approve
+Reject
+Active
+Inactive
+No documents found
+Are you sure you want to approve the submitted documents?
+Are you sure you want to reject the submitted documents?
+Approved
+Rejected
+Driver Document Request
+Vendor Document Request
+Upload
+Upload Documents
+Document uploaded successfully
+
+Document request not found
+
+Hello
+Your document submission has been rejected.
+Your document submission has been approved.
+We are requesting a re-submission of document for your account.
+Please login to your account to view the request.
+Thank you

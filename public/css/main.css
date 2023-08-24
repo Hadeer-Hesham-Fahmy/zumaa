@@ -1,0 +1,12 @@
+html,body {
+    font-family: 'Krub', sans-serif !important;
+}
+
+.active-item{
+    background-color: #ffffff !important;
+}
+
+.inactive-item{
+    background-color: #e6e6e6 !important;
+    border-bottom: 1px solid rgb(196, 196, 196) !important;
+}
