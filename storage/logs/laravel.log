@@ -1216,3 +1216,148 @@
 #87 D:\\xampp8.1\\htdocs\\zuma backend\\server.php(21): require_once('D:\\\\xampp8.1\\\\htd...')
 #88 {main}
 "} 
+[2023-08-24 14:02:26] production.ERROR: SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) (Connection: mysql, SQL: select * from information_schema.tables where table_schema = forge and table_name = settings and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) (Connection: mysql, SQL: select * from information_schema.tables where table_schema = forge and table_name = settings and table_type = 'BASE TABLE') at D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:801)
+[stacktrace]
+#0 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(755): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(424): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(394): Illuminate\\Database\\Connection->select('select * from i...', Array, false)
+#3 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(44): Illuminate\\Database\\Connection->selectFromWriteConnection('select * from i...', Array)
+#4 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('settings')
+#5 D:\\xampp8.1\\htdocs\\zuma backend\\app\\Console\\Commands\\MakeUpgrade.php(74): Illuminate\\Support\\Facades\\Facade::__callStatic('hasTable', Array)
+#6 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Concerns\\HasParameters.php(20): App\\Console\\Commands\\MakeUpgrade->getArguments()
+#7 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(120): Illuminate\\Console\\Command->specifyParameters()
+#8 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\GeneratorCommand.php(126): Illuminate\\Console\\Command->__construct()
+#9 [internal function]: Illuminate\\Console\\GeneratorCommand->__construct(Object(Illuminate\\Filesystem\\Filesystem))
+#10 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(952): ReflectionClass->newInstanceArgs(Array)
+#11 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Console\\\\Com...')
+#12 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Com...', Array, true)
+#13 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Console\\\\Com...', Array)
+#14 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Console\\\\Com...', Array)
+#15 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(249): Illuminate\\Foundation\\Application->make('App\\\\Console\\\\Com...')
+#16 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(349): Illuminate\\Console\\Application->resolve('App\\\\Console\\\\Com...')
+#17 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(130): Illuminate\\Foundation\\Console\\Kernel->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Console\\Application))
+#18 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(77): Illuminate\\Console\\Application->bootstrap()
+#19 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(481): Illuminate\\Console\\Application->__construct(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Events\\Dispatcher), '10.20.0')
+#20 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#21 D:\\xampp8.1\\htdocs\\zuma backend\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 {main}
+
+[previous exception] [object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) at D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php:65)
+[stacktrace]
+#0 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(65): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\Connector.php(45): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connectors\\ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(1292): call_user_func(Object(Closure))
+#6 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(521): Illuminate\\Database\\Connection->getPdo()
+#7 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(416): Illuminate\\Database\\Connection->getPdoForSelect(false)
+#8 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(788): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#9 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(755): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#10 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(424): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#11 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(394): Illuminate\\Database\\Connection->select('select * from i...', Array, false)
+#12 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\MySqlBuilder.php(44): Illuminate\\Database\\Connection->selectFromWriteConnection('select * from i...', Array)
+#13 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(353): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('settings')
+#14 D:\\xampp8.1\\htdocs\\zuma backend\\app\\Console\\Commands\\MakeUpgrade.php(74): Illuminate\\Support\\Facades\\Facade::__callStatic('hasTable', Array)
+#15 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Concerns\\HasParameters.php(20): App\\Console\\Commands\\MakeUpgrade->getArguments()
+#16 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(120): Illuminate\\Console\\Command->specifyParameters()
+#17 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\GeneratorCommand.php(126): Illuminate\\Console\\Command->__construct()
+#18 [internal function]: Illuminate\\Console\\GeneratorCommand->__construct(Object(Illuminate\\Filesystem\\Filesystem))
+#19 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(952): ReflectionClass->newInstanceArgs(Array)
+#20 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(795): Illuminate\\Container\\Container->build('App\\\\Console\\\\Com...')
+#21 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(937): Illuminate\\Container\\Container->resolve('App\\\\Console\\\\Com...', Array, true)
+#22 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(731): Illuminate\\Foundation\\Application->resolve('App\\\\Console\\\\Com...', Array)
+#23 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(922): Illuminate\\Container\\Container->make('App\\\\Console\\\\Com...', Array)
+#24 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(249): Illuminate\\Foundation\\Application->make('App\\\\Console\\\\Com...')
+#25 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(349): Illuminate\\Console\\Application->resolve('App\\\\Console\\\\Com...')
+#26 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(130): Illuminate\\Foundation\\Console\\Kernel->Illuminate\\Foundation\\Console\\{closure}(Object(Illuminate\\Console\\Application))
+#27 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(77): Illuminate\\Console\\Application->bootstrap()
+#28 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(481): Illuminate\\Console\\Application->__construct(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Events\\Dispatcher), '10.20.0')
+#29 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Illuminate\\Foundation\\Console\\Kernel->getArtisan()
+#30 D:\\xampp8.1\\htdocs\\zuma backend\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 {main}
+"} 
+[2023-08-24 14:06:13] production.ERROR: Command "make:migartion" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:datatable
+    make:event
+    make:exception
+    make:export
+    make:factory
+    make:import
+    make:job
+    make:listener
+    make:livewire
+    make:mail
+    make:middleware
+    make:migration
+    make:migration:pivot
+    make:migration:schema
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:repository
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:service
+    make:table
+    make:test
+    make:trait
+    make:upgrade
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:migartion\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:datatable
+    make:event
+    make:exception
+    make:export
+    make:factory
+    make:import
+    make:job
+    make:listener
+    make:livewire
+    make:mail
+    make:middleware
+    make:migration
+    make:migration:pivot
+    make:migration:schema
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:repository
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:service
+    make:table
+    make:test
+    make:trait
+    make:upgrade
+    make:view at D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\symfony\\console\\Application.php:725)
+[stacktrace]
+#0 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\symfony\\console\\Application.php(262): Symfony\\Component\\Console\\Application->find('make:migartion')
+#1 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\symfony\\console\\Application.php(174): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 D:\\xampp8.1\\htdocs\\zuma backend\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(201): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 D:\\xampp8.1\\htdocs\\zuma backend\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 {main}
+"} 
