@@ -38,4 +38,8 @@ vendor/ahsankhatri/firestore-php/src/Helpers/FirestoreHelper.php
 vendor/ahsankhatri/firestore-php/src/Query/FirestoreQuery.php
 vendor/ahsankhatri/firestore-php/tests/ExampleTest.php
 vendor/ahsankhatri/firestore-php/tests/FirestoreDocumentTest.php
-.well-known/ca_bundle.crt .well-known/certificate.crt .well-known/index.php .well-known/pki-validation/B57AF4C96CEE6B8D75C0C2CB995C4834.txt .well-known/private.key
+.well-known/ca_bundle.crt 
+.well-known/certificate.crt 
+.well-known/index.php 
+.well-known/pki-validation/B57AF4C96CEE6B8D75C0C2CB995C4834.txt 
+.well-known/private.key
