@@ -1,0 +1,1 @@
+<?php /**PATH D:\xampp8.1\htdocs\zuma backend\resources\views/vendor/livewire-tables/stubs/modals.blade.php ENDPATH**/ ?>
