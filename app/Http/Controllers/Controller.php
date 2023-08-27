@@ -31,6 +31,5 @@ class Controller extends BaseController
         return !\App::environment('production');
     }
 
-    // hadeer
 
 }

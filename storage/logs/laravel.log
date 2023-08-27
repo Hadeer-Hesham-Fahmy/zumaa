@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 [2023-08-23 10:34:14] production.ERROR: SQLSTATE[HY000] [1045] Access denied for user 'web'@'localhost' (using password: YES) (Connection: mysql, SQL: select * from `settings`) {"view":{"view":"D:\\xampp8.1\\htdocs\\zuma backend\\resources\\views\\livewire\\auth\\login.blade.php","data":{"errors":"<pre class=sf-dump id=sf-dump-2048984833 data-indent-pad=\"  \"><span class=sf-dump-note>Illuminate\\Support\\ViewErrorBag</span> {<a class=sf-dump-ref>#3383</a><samp data-depth=1 class=sf-dump-expanded>
   #<span class=sf-dump-protected title=\"Protected property\">bags</span>: []
 </samp>}
@@ -1557,3 +1558,5 @@ Did you mean one of these?
 #56 D:\\xampp8.1\\htdocs\\zuma backend\\server.php(21): require_once('D:\\\\xampp8.1\\\\htd...')
 #57 {main}
 "} 
+=======
+>>>>>>> Stashed changes
