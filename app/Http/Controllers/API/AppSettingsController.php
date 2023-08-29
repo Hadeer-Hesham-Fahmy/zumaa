@@ -35,7 +35,7 @@ class AppSettingsController extends Controller
                 "app_name" => setting('appName', ""),
                 "company_name" => setting('websiteName', ""),
                 "enble_otp" => setting('enableOTP', "1"),
-                "enableOTPLogin" => setting('enableOTPLogin', "0"),
+                "enableOTPLogin" => setting('enableOTPLogin', "1"),
                 "enableEmailLogin" => (bool) setting('enableEmailLogin', 1),
                 "enableProfileUpdate" => (bool) setting('enableProfileUpdate', 1),
                 "otpGateway" => setting('otpGateway', ""),
