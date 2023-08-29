@@ -1,7 +1,7 @@
 <?php return array (
   'app' => 
   array (
-    'name' => 'Glover',
+    'name' => 'Zumaa',
     'env' => 'production',
     'debug' => true,
     'url' => 'https://zumaa.app',
@@ -195,7 +195,7 @@
   array (
     'backup' => 
     array (
-      'name' => 'Glover',
+      'name' => 'Zumaa',
       'source' => 
       array (
         'files' => 
@@ -280,7 +280,7 @@
     array (
       0 => 
       array (
-        'name' => 'Glover',
+        'name' => 'Zumaa',
         'disks' => 
         array (
           0 => 'local',
@@ -493,7 +493,7 @@
         'endpoint' => NULL,
       ),
     ),
-    'prefix' => 'glover_cache',
+    'prefix' => 'zumaa_cache',
   ),
   'cors' => 
   array (
@@ -607,7 +607,7 @@
       'options' => 
       array (
         'cluster' => 'redis',
-        'prefix' => 'glover_database_',
+        'prefix' => 'zumaa_database_',
       ),
       'default' => 
       array (
@@ -780,7 +780,7 @@
       array (
         'driver' => 'local',
         'root' => 'D:\\xampp8.1\\htdocs\\zuma backend\\storage\\app/public',
-        'url' => 'https://zumaa.app-admin.test/storage',
+        'url' => 'https://zumaa.app/storage/app/public',
         'visibility' => 'public',
       ),
       's3' => 
@@ -1369,7 +1369,6 @@
       0 => 'web',
     ),
     'expiration' => NULL,
-    'token_prefix' => 'laravel_sanctum_',
     'middleware' => 
     array (
       'verify_csrf_token' => 'App\\Http\\Middleware\\VerifyCsrfToken',
@@ -1419,7 +1418,7 @@
       0 => 2,
       1 => 100,
     ),
-    'cookie' => 'glover_session',
+    'cookie' => 'zumaa_session',
     'path' => '/',
     'domain' => NULL,
     'secure' => NULL,
@@ -1581,7 +1580,6 @@
       16 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\UndefinedViewVariableSolutionProvider',
       17 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\GenericLaravelExceptionSolutionProvider',
       18 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\OpenAiSolutionProvider',
-      19 => 'Spatie\\LaravelIgnition\\Solutions\\SolutionProviders\\SailNetworkSolutionProvider',
     ),
     'ignored_solution_providers' => 
     array (

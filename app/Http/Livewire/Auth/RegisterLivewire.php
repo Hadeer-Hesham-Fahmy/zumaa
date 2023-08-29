@@ -54,10 +54,10 @@ class RegisterLivewire extends BaseLivewireComponent
                 "agreedVendor" => "accepted",
                 "vendor_name" => "required",
                 "vendor_email" => "required|email|unique:vendors,email",
-                "vendor_phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:vendors,phone",
+                // "vendor_phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:vendors,phone",
                 "name" => "required",
                 "email" => "required|email|unique:users",
-                "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users",
+                // "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users",
                 "password" => "required|string|min:6",
                 "vendorDocuments" => "required",
             ]

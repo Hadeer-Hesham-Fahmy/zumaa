@@ -10,7 +10,8 @@ x-transition:leave-end="opacity-0"
 >
     <div class="py-4 text-gray-500 dark:text-gray-400">
         <a class="flex items-center space-x-4 text-lg font-bold text-gray-100 ltr:ml-6 rtl:mr-6" href="<?php echo e(route('dashboard')); ?>">
-            <img src="<?php echo e(setting('websiteLogo', asset('images/logo.png') )); ?>" class="w-16 h-16 rounded" />
+            <img src="https://zumaa.app<?php echo e(setting('websiteLogo', asset('images/logo.png') )); ?>" class="w-16 h-16 rounded" />
+            <!-- <img src="https://zumaa.app/storage/app/public/logos/Aan62y2g9zilL0r7zrucRuFvSUqJZw9kYpTlByed.png" class="w-16 h-16 rounded" /> -->
             <div class="ltr:pl-6 rtl:pr-6">
                 <p><?php echo e(setting('websiteName', env("APP_NAME") )); ?></p>
                 <p class="text-xs text-gray-200"><?php echo e(__('version')); ?> <?php echo e(setting('appVerison', "1.0.0" )); ?></p>

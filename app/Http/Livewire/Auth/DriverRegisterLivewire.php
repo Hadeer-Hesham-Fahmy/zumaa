@@ -76,7 +76,7 @@ class DriverRegisterLivewire extends BaseLivewireComponent
                     "agreedDriver" => "accepted",
                     "name" => "required",
                     "email" => "required|email|unique:users",
-                    "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users",
+                    // "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users",
                     "password" => "required|string|min:6",
                     "driverDocuments" => "required",
                 ]
@@ -90,7 +90,7 @@ class DriverRegisterLivewire extends BaseLivewireComponent
                     "agreedDriver" => "accepted",
                     "name" => "required",
                     "email" => "required|email|unique:users",
-                    "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users",
+                    // "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users",
                     "password" => "required|string|min:6",
                     "driverDocuments" => "required",
                     "car_make_id" => "required",

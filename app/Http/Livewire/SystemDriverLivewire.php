@@ -25,7 +25,7 @@ class SystemDriverLivewire extends BaseLivewireComponent
         return [
             "name" => "required|string",
             "email" => "required|email|unique:users",
-            "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users",
+            // "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users",
             "password" => "sometimes|nullable|string",
             "commission" => "sometimes|nullable|numeric",
         ];
@@ -105,7 +105,7 @@ class SystemDriverLivewire extends BaseLivewireComponent
             [
                 "name" => "required|string",
                 "email" => "required|email|unique:users,email," . $this->selectedModel->id . "",
-                "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users,phone," . $this->selectedModel->id . "",
+                // "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users,phone," . $this->selectedModel->id . "",
                 "password" => "sometimes|nullable|string",
                 "commission" => "sometimes|nullable|numeric",
             ]

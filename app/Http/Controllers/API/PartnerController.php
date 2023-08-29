@@ -26,12 +26,12 @@ class PartnerController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'phone' => 'required|' . 'phone:' . setting('countryCode', "GH") . '|unique:users',
+                // 'phone' => 'required|' . 'phone:' . setting('countryCode', "GH") . '|unique:users',
                 'email' => 'required|email|unique:users',
                 'name' => 'required',
                 'password' => 'required',
                 'vendor_email' => 'required|email|unique:vendors,email',
-                'vendor_phone' => 'required|' . 'phone:' . setting('countryCode', "GH") . '|unique:vendors,phone',
+                // 'vendor_phone' => 'required|' . 'phone:' . setting('countryCode', "GH") . '|unique:vendors,phone',
                 'vendor_name' => 'required',
                 'vendor_type_id' => 'required|exists:vendor_types,id',
             ]
@@ -109,7 +109,7 @@ class PartnerController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'phone' => 'required|' . 'phone:' . setting('countryCode', "GH") . '|unique:users',
+                // 'phone' => 'required|' . 'phone:' . setting('countryCode', "GH") . '|unique:users',
                 'email' => 'required|email|unique:users',
                 'name' => 'required',
                 'password' => 'required',

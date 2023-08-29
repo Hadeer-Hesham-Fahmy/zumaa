@@ -133,7 +133,7 @@ class AuthController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'phone' => 'phone:' . setting('countryCode', "GH"),
+                // 'phone' => 'phone:' . setting('countryCode', "GH"),
             ],
             $messages = [
                 'phone.exists' => __('Phone not associated with any account'),
@@ -155,6 +155,7 @@ class AuthController extends Controller
 
             //
             $internationalFormat = (new PhoneNumber($phone, setting('countryCode', "GH")))->formatInternational();
+            // $internationalFormat = new PhoneNumber;
             return response()->json([
                 "phone" => $internationalFormat
             ], 200);
@@ -172,7 +173,7 @@ class AuthController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'phone' => 'phone:' . setting('countryCode', "GH"),
+                // 'phone' => 'phone:' . setting('countryCode', "GH"),
             ],
             $messages = [
                 'phone.exists' => __('Phone not associated with any account'),
@@ -247,7 +248,7 @@ class AuthController extends Controller
             [
                 'name' => 'required|string',
                 'email' => 'required|email|unique:users',
-                'phone' => 'phone:' . setting('countryCode', "GH") . '|unique:users',
+                // 'phone' => 'phone:' . setting('countryCode', "GH") . '|unique:users',
                 'password' => 'required',
             ],
             $messages = [
@@ -345,7 +346,7 @@ class AuthController extends Controller
             [
                 'name' => 'sometimes|string',
                 'email' => 'sometimes|email|unique:users,email,' . Auth::id(),
-                'phone' => 'phone:' . setting('countryCode', "GH") . '|unique:users,phone,' . Auth::id(),
+                // 'phone' => 'phone:' . setting('countryCode', "GH") . '|unique:users,phone,' . Auth::id(),
                 'photo' => 'sometimes|nullable|image|max:2048',
             ],
             $messages = [

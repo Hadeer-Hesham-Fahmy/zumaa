@@ -107,7 +107,7 @@ class OTPController extends Controller
         $validator = Validator::make(
             $request->all(),
             [
-                'phone' => 'phone:' . setting('countryCode', "GH"),
+                // 'phone' => 'phone:' . setting('countryCode', "GH"),
             ],
             $messages = [
                 'phone.exists' => __('Phone not associated with any account'),
