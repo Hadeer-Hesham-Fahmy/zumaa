@@ -102,26 +102,26 @@ class WebAppSettings extends BaseSettingsComponent
 
             // store new logo
             if ($this->websiteLogo) {
-                // $this->oldWebsiteLogo = Storage::url($this->websiteLogo->store('public/logos'));
-                $this->oldWebsiteLogo = Storage::url($this->websiteLogo->store('app/public/logos'));
+                $this->oldWebsiteLogo = Storage::url($this->websiteLogo->store('public/logos'));
+                // $this->oldWebsiteLogo = Storage::url($this->websiteLogo->store('app/public/logos'));
             }
 
             // store new logo
             if ($this->favicon) {
-                // $this->oldFavicon = Storage::url($this->favicon->store('public/favicons'));
-                $this->oldFavicon = Storage::url($this->favicon->store('app/public/favicons'));
+                $this->oldFavicon = Storage::url($this->favicon->store('public/favicons'));
+                // $this->oldFavicon = Storage::url($this->favicon->store('app/public/favicons'));
             }
 
             // store new logo
             if ($this->loginImage) {
-                $this->oldLoginImage = Storage::url($this->loginImage->store('app/public/auth/login'));
-                // $this->oldLoginImage = Storage::url($this->loginImage->store('public/auth/login'));
+                // $this->oldLoginImage = Storage::url($this->loginImage->store('app/public/auth/login'));
+                $this->oldLoginImage = Storage::url($this->loginImage->store('public/auth/login'));
             }
 
             // store new logo
             if ($this->registerImage) {
-                $this->oldRegisterImage = Storage::url($this->registerImage->store('app/public/auth/register'));
-                // $this->oldRegisterImage = Storage::url($this->registerImage->store('public/auth/register'));
+                // $this->oldRegisterImage = Storage::url($this->registerImage->store('app/public/auth/register'));
+                $this->oldRegisterImage = Storage::url($this->registerImage->store('public/auth/register'));
             }
 
 

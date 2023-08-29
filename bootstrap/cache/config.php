@@ -780,7 +780,7 @@
       array (
         'driver' => 'local',
         'root' => 'D:\\xampp8.1\\htdocs\\zuma backend\\storage\\app/public',
-        'url' => 'https://zumaa.app/storage',
+        'url' => 'https://zumaa.app/storage/app/public',
         'visibility' => 'public',
       ),
       's3' => 
