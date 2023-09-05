@@ -54,8 +54,8 @@ class ServerSettingsLivewire extends BaseLivewireComponent
             "mailPort" => "required",
             "mailUsername" => "required",
             "mailPassword" => "sometimes",
-            'mailFromAddress' => "required",
-            'mailFromName' => "required",
+            'mailFromAddress' => "sometimes",
+            'mailFromName' => "sometimes",
             'mailEncryption' => "required",
         ]);
 
