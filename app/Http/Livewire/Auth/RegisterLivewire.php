@@ -59,7 +59,7 @@ class RegisterLivewire extends BaseLivewireComponent
                 "email" => "required|email|unique:users",
                 // "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users",
                 "password" => "required|string|min:6",
-                "vendorDocuments" => "required",
+                // "vendorDocuments" => "required",
             ]
         );
 
