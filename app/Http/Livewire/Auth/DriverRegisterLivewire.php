@@ -78,7 +78,7 @@ class DriverRegisterLivewire extends BaseLivewireComponent
                     "email" => "required|email|unique:users",
                     // "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users",
                     "password" => "required|string|min:6",
-                    "driverDocuments" => "required",
+                    // "driverDocuments" => "required",
                 ]
             );
         } else {
@@ -92,7 +92,7 @@ class DriverRegisterLivewire extends BaseLivewireComponent
                     "email" => "required|email|unique:users",
                     // "phone" => "required|phone:" . setting('countryCode', "GH") . "|unique:users",
                     "password" => "required|string|min:6",
-                    "driverDocuments" => "required",
+                    // "driverDocuments" => "required",
                     "car_make_id" => "required",
                     "car_model_id" => "required",
                     "vehicle_type_id" => "required",
