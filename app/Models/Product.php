@@ -18,7 +18,7 @@ class Product extends BaseModel
     public $translatable = ['name', "description"];
 
     protected $fillable = [
-        "id", "name", "description", "price", "discount_price", "capacity", "unit", "package_count", "available_qty", "featured", "deliverable", "is_active", "vendor_id"
+        "id", "name", "description", "price", "discount_price", "capacity", "unit", "package_count", "available_qty", "featured", "deliverable", "is_active", "vendor_id", "barcode"
     ];
 
     protected $appends = ['formatted_date', 'sell_price', 'photo', 'is_favourite', 'rating', 'option_groups', 'photos', 'digital_files', 'token'];
